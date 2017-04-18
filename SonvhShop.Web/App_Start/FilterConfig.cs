@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace SONVHSHOP
+namespace SonvhShop.Web
 {
     public class FilterConfig
     {

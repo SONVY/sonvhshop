@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace SONVHSHOP
+namespace SonvhShop.Web
 {
     public class BundleConfig
     {
