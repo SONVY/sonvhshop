@@ -1,0 +1,21 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace SonvhShop.Model.Model
+{
+    [Table("MenuGroups")]
+    internal class MenuGroup
+    {
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public string ID { get; set; }
+
+        [Required]
+        [MaxLength(250)]
+        public string Name { get; set; }
+
+        public virtual IEnumerable<Menu> Menus { set; get; }
+    }
+}
