@@ -14,7 +14,9 @@ namespace SonvhShop.Model.Model
         [Key]
         public int ProductID { get; set; }
         [Key]
-        public int TagID { get; set; }
+        [Column(TypeName = "varchar")]
+        [MaxLength(50)]
+        public string TagID { get; set; }
         [ForeignKey("ProductID")]
         public virtual Product Product { get; set; }
         [ForeignKey("TagID")]

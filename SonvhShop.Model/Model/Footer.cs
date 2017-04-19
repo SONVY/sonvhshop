@@ -7,11 +7,11 @@ namespace SonvhShop.Model.Model
     internal class Footer
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [MaxLength(50)]
         public string ID { get; set; }
 
         [Required]
-        [MaxLength(250)]
+        [MaxLength(500)]
         public string Content { get; set; }
     }
 }

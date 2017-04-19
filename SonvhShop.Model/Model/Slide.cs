@@ -26,7 +26,7 @@ namespace SonvhShop.Model.Model
         [MaxLength(500)]
         public string URL { get; set; }
         public int DisplayOrder { get; set; }
-        [Required]
+        
         public bool Status { get; set; }
     }
 }

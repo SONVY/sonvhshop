@@ -13,6 +13,7 @@ namespace SonvhShop.Model.Model
     {
         [Key]
         public int ID { get; set; }
+        [Required]
         public DateTime VisitedDate { get; set; }
         [MaxLength(50)]
         public string IPAddress { get; set; }

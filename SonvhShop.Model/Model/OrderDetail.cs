@@ -20,6 +20,6 @@ namespace SonvhShop.Model.Model
         [ForeignKey("OrderID")]
         public virtual Order Order { get; set; }
         [ForeignKey("ProductID")]
-        public virtual ProductCategory ProductCategory { get; set; }
+        public virtual Product Product { get; set; }
     }
 }

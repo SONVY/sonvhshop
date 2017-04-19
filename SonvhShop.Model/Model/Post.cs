@@ -18,11 +18,15 @@ namespace SonvhShop.Model.Model
         [Required]
         public string Name { get; set; }
         [Required]
+        [MaxLength(250)]
+        [Column(TypeName ="varchar")]
         public string Alias { get; set; }
         public int CategoryID { get; set; }
         [ForeignKey("CategoryID")]
         public virtual PostCategory PostCategory { get; set; }
+        [MaxLength(500)]
         public string Image { get; set; }
+        [MaxLength(500)]
         public string Description { get; set; }
         public string Content { get; set; }
         public bool? HomeFlag { get; set; }
