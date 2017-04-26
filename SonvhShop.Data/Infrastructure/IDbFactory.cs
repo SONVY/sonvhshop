@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using SonvhShop.Data;
+using System;
 
 namespace SonvhShop.Data.Infrastructure
 {
-    interface IDbFactory
+    public interface IDbFactory : IDisposable
     {
-
+        SonvhShopDbContext Init();
     }
 }

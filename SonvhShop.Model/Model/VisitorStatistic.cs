@@ -12,6 +12,7 @@ namespace SonvhShop.Model.Model
     public class VisitorStatistic
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ID { get; set; }
         [Required]
         public DateTime VisitedDate { get; set; }

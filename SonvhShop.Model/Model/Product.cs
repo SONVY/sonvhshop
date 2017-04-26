@@ -18,9 +18,12 @@ namespace SonvhShop.Model.Model
         public string Name { get; set; }
         [Required]
         public string Alias { get; set; }
+        [Required]
         public int CategoryID { get; set; }
+        [Required]
         public string Image { get; set; }
-        public XElement MoreImage { get; set; }
+        [Column(TypeName ="xml")]
+        public string MoreImage { get; set; }
         public decimal Price { get; set; }
         public decimal? PromotionPrice { get; set; }
         public int? Warranty { get; set; }

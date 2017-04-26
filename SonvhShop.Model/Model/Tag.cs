@@ -13,6 +13,7 @@ namespace SonvhShop.Model.Model
     {
         [Key]
         [MaxLength(50)]
+        [Column(TypeName ="varchar")]
         public string ID { get; set; }
         [MaxLength(250)]
         public string Name { get; set; }

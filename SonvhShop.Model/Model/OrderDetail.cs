@@ -11,11 +11,10 @@ namespace SonvhShop.Model.Model
     [Table("OrderDetails")]
     public class OrderDetail
     {
-        [Key]
+        [Key, Column(Order = 1)]
         public int OrderID { get; set; }
-        [Key]
+        [Key, Column(Order = 2)]
         public int ProductID { get; set; }
-        [Required]
         public int Quantity { get; set; }
         [ForeignKey("OrderID")]
         public virtual Order Order { get; set; }

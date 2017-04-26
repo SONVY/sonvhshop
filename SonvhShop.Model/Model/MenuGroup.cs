@@ -6,11 +6,11 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace SonvhShop.Model.Model
 {
     [Table("MenuGroups")]
-    internal class MenuGroup
+    public class MenuGroup
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public string ID { get; set; }
+        public int ID { get; set; }
 
         [Required]
         [MaxLength(250)]
